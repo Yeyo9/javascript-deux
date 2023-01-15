@@ -1,0 +1,40 @@
+monBouton = document.getElementById('monBouton')
+paragraphe = document.getElementById('MonParagraphe')
+
+
+
+monBouton.addEventListener("click", () => {
+    alert("Bonjour");
+    paragraph.textContent = 'Je suis un paragraphe modifié'
+})
+
+
+
+
+const paragraph = document.querySelector('p');
+
+
+function mouseOver() {
+  paragraph.style.fontSize = '30px';
+  paragraph.style.color = 'violet';
+}
+
+function mouseOut() {
+    paragraph.style.fontSize = '25px';
+    paragraph.style.color = 'blue';
+  }
+
+paragraph.addEventListener('mouseover', mouseOver);
+paragraph.addEventListener('mouseout', mouseOut);
+
+
+
+const button = document.getElementById('monBouton');
+const paragraph2 = document.getElementById('monParagraphe');
+
+button.addEventListener('click', function() {
+  const newListItem = document.createElement('li');
+  newListItem.textContent = 'Nouvel élément';
+  const list = document.getElementById('maListe');
+  list.appendChild(newListItem);
+});
